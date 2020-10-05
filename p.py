@@ -5,7 +5,7 @@ import shutil
 from pprint import pprint
 print("Comparing directories:")
 
-def are_dir_trees_equal(dir1, dir2):
+def compare_dirs(dir1, dir2):
     """
     Compare two directories recursively. Files in each directory are
     assumed to be equal if their names and contents are equal.
@@ -36,7 +36,7 @@ print("Enter first directory")
 dir1 = raw_input()
 print("Enter second directory")
 dir2 = raw_input()
-if (are_dir_trees_equal(dir1, dir2)):
+if (compare_dirs(dir1, dir2)):
         print("Directories are equal!")
 else:
         print("Directories aren't equal!")
